@@ -106,17 +106,29 @@ namespace Route_course
 
             #region Question10
             ////10-Write a method PrintBookInfo(string title, int pages = 300) where pages is optional. Call it once with only a title, and once passing both a title and pages.
-            static void PrintBookInfo(string title, int pages = 300)
-            {
-                Console.WriteLine($"Title: {title}, Pages: {pages}");
-            }
+            //static void PrintBookInfo(string title, int pages = 300)
+            //{
+            //    Console.WriteLine($"Title: {title}, Pages: {pages}");
+            //}
             //PrintBookInfo("Clean Code");      
             //PrintBookInfo("Clean Code", 464);
             #endregion
 
             #region Question11
             //11-Using the PrintBookInfo method from the question above, call it by naming the parameters, passing pages before title
-            PrintBookInfo(pages: 464, title: "Clean Code");
+            //PrintBookInfo(pages: 464, title: "Clean Code");
+            #endregion
+
+            #region Question12
+            //12-Write a method PrintAllTitles(params string[] titles) that prints each title on its own line. Call it with three book titles. 
+            static void PrintAllTitles(params string[] titles)
+            {
+                foreach (string title in titles)
+                {
+                    Console.WriteLine(title);
+                }
+            }
+            PrintAllTitles("Clean Code", "Design Patterns", "Refactoring");
             #endregion
 
         }
