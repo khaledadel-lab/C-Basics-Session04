@@ -33,12 +33,23 @@ namespace Route_course
             #endregion
 
             #region Question4
-            //4-Write a method PrintBookTitle(string title) that prints "Book title: " + title. Call it with "Clean Code"
-            static void PrintBookTitle(string title)
+            ////4-Write a method PrintBookTitle(string title) that prints "Book title: " + title. Call it with "Clean Code"
+            //static void PrintBookTitle(string title)
+            //{
+            //    Console.WriteLine("Book title: " + title);
+            //}
+            //PrintBookTitle("Clean Code");
+            #endregion
+
+            #region Question5
+            //5-Write a method AddBonusPages(int pages) that adds 50 to pages. Call it with a variable int pages = 400; and print pages afterward. What do you expect to see, and why? 
+            static void AddBonusPages(int pages)
             {
-                Console.WriteLine("Book title: " + title);
+                pages += 50;
             }
-            PrintBookTitle("Clean Code");
+            int pages = 400;
+            AddBonusPages(pages);
+            Console.WriteLine(pages);
             #endregion
         }
     }
