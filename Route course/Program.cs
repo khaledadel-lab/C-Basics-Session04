@@ -86,32 +86,22 @@ namespace Route_course
             #endregion
 
             #region Question9
-            ////9-Write a method bool TryGetPrice(string title, out double price) that returns true and sets price to 25.5 if title is "Clean Code", otherwise returns false and sets price to 0. Call it 1 and print the price if found  Write a method PrintBookInfo(string title, int pages = 300) where pages is optional. Call it once with only a title, and once passing both a title and pages.
-            //static bool TryGetPrice(string title, out double price)
-            //{
-            //    if (title == "Clean Code")
-            //    {
-            //        price = 25.5;
-            //        return true;
-            //    }
-
-            //    price = 0;
-            //    return false;
-            //}
-            //if (TryGetPrice("Clean Code", out double bookPrice))
-            //{
-            //    Console.WriteLine($"Price found: {bookPrice}"); // Output: Price found: 25.5
-            //}
-            #endregion
-
-            #region Question10
-            //10-Using the PrintBookInfo method from the question above, call it by naming the parameters, passing pages before title. 
-            static void PrintBookInfo(string title, int pages = 300)
+            //9-Write a method bool TryGetPrice(string title, out double price) that returns true and sets price to 25.5 if title is "Clean Code", otherwise returns false and sets price to 0. Call it 1 and print the price if found  Write a method PrintBookInfo(string title, int pages = 300) where pages is optional. Call it once with only a title, and once passing both a title and pages.
+            static bool TryGetPrice(string title, out double price)
             {
-                Console.WriteLine($"Title: {title}, Pages: {pages}");
+                if (title == "Clean Code")
+                {
+                    price = 25.5;
+                    return true;
+                }
+
+                price = 0;
+                return false;
             }
-            PrintBookInfo("Clean Code");       
-            PrintBookInfo("Clean Code", 464);
+            if (TryGetPrice("Clean Code", out double bookPrice))
+            {
+                Console.WriteLine($"Price found: {bookPrice}"); // Output: Price found: 25.5
+            }
             #endregion
         }
     }
