@@ -42,14 +42,25 @@ namespace Route_course
             #endregion
 
             #region Question5
-            //5-Write a method AddBonusPages(int pages) that adds 50 to pages. Call it with a variable int pages = 400; and print pages afterward. What do you expect to see, and why? 
-            static void AddBonusPages(int pages)
+            ////5-Write a method AddBonusPages(int pages) that adds 50 to pages. Call it with a variable int pages = 400; and print pages afterward. What do you expect to see, and why? 
+            //static void AddBonusPages(int pages)
+            //{
+            //    pages += 50;
+            //}
+            //int pages = 400;
+            //AddBonusPages(pages);
+            //Console.WriteLine(pages);
+            #endregion
+
+            #region Question6
+            //6-Write a method ApplyDiscount(double[] prices) that subtracts 5 from prices[0]. Call it with double[] prices = { 25.5, 40.0 }; and print prices[0] afterward. What do you expect to see, and why?
+            static void ApplyDiscount(double[] prices)
             {
-                pages += 50;
+                prices[0] -= 5;
             }
-            int pages = 400;
-            AddBonusPages(pages);
-            Console.WriteLine(pages);
+            double[] prices = { 25.5, 40.0 };
+            ApplyDiscount(prices);
+            Console.WriteLine(prices[0]);
             #endregion
         }
     }
